@@ -463,7 +463,6 @@ button.external:after, a.button.external:after, input[type=submit].external:afte
 .topbar {
   position: fixed;
   top: 0;
-  border-top: 5px solid #009016;
   z-index: 10000;
   background: white;
   width: 100%;

@@ -1,6 +1,17 @@
 @charset "UTF-8";
 /* the below should look the same as the above when on a white bg */
 /* $alpha-grid-color: rgba(0, 0, 0, 0.13); */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@font-face {
+  src: url("https://openstreetmap.us/assets/fonts/NationalPark-ExtraBold.otf");
+  font-family: "National Park";
+  font-weight: 800;
+}
+@font-face {
+  src: url("https://openstreetmap.us/assets/fonts/NationalPark-Bold.otf");
+  font-family: "National Park";
+  font-weight: 700;
+}
 /*  Reset ♥
     http://meyerweb.com/eric/tools/css/reset/
     v2.0 | 20110126
@@ -80,14 +91,14 @@ textarea {
   color: #333;
   font-size: 18px;
   line-height: 1.6667;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-variant-numeric: lining-nums;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, serif;
+  font-family: "Zilla Slab", Georgia, serif;
   margin: 0;
   margin-bottom: 12px;
   font-weight: 600;
@@ -113,16 +124,16 @@ h4, h5 {
 
 /* Links */
 a {
-  color: #D99AB6;
+  color: #009016;
   text-decoration: none;
 }
 
 a:visited {
-  color: #D99AB6;
+  color: #009016;
 }
 
 a:hover, a:active {
-  color: #dda4bd;
+  color: #00b51c;
 }
 a:hover:not(.button), a:active:not(.button) {
   text-decoration: underline;
@@ -133,10 +144,10 @@ a:hover:not(.button), a:active:not(.button) {
   color: white;
 }
 .dark a {
-  color: #FFB9D8;
+  color: #33cd4b;
 }
 .dark a:hover, .dark a:active {
-  color: #ffc7e0;
+  color: #5cd76f;
 }
 .dark hr {
   background: rgba(255, 255, 255, 0.13);
@@ -392,7 +403,7 @@ button:hover, a.button:hover, input[type=submit]:hover {
   filter: brightness(1.1);
 }
 button.bordered, a.button.bordered, input[type=submit].bordered {
-  border: 1px solid #D99AB6;
+  border: 1px solid #009016;
   font-size: 0.95em;
 }
 button.bordered:hover, a.button.bordered:hover, input[type=submit].bordered:hover {
@@ -412,12 +423,12 @@ button.white:hover, a.button.white:hover, input[type=submit].white:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 button.prominent, a.button.prominent, input[type=submit].prominent {
-  background-color: #D99AB6;
+  background-color: #009016;
   color: white;
 }
 button.prominent:hover, a.button.prominent:hover, input[type=submit].prominent:hover {
-  border-color: #FFB9D8;
-  background: #FFB9D8;
+  border-color: #33cd4b;
+  background: #33cd4b;
 }
 button.external:after, a.button.external:after, input[type=submit].external:after {
   content: " ";
@@ -432,7 +443,7 @@ button.external:after, a.button.external:after, input[type=submit].external:afte
 .site-wordmark {
   display: flex;
   align-items: center;
-  font-family: Georgia, serif;
+  font-family: "Zilla Slab", Georgia, serif;
   font-weight: bold;
   font-size: 21px;
   white-space: nowrap;
@@ -452,7 +463,7 @@ button.external:after, a.button.external:after, input[type=submit].external:afte
 .topbar {
   position: fixed;
   top: 0;
-  
+  border-top: 5px solid #009016;
   z-index: 10000;
   background: white;
   width: 100%;
@@ -846,7 +857,7 @@ table.schedule tr.interstitial .title {
   font-style: italic;
 }
 table.schedule tr.ongoing {
-  border-top: 2px solid #930041;
+  border-top: 2px solid #CC2B48;
   background: #E5F7FC;
 }
 table.schedule tr.ongoing td:first-child {
@@ -860,7 +871,7 @@ table.schedule tr.ongoing td:first-child:before {
   position: absolute;
   top: -14px;
   border-radius: 13px;
-  background-color: #930041;
+  background-color: #CC2B48;
   color: white;
   font-size: 14px;
   font-weight: bold;
@@ -905,7 +916,7 @@ table.schedule tr.ongoing .title {
   font-weight: 600;
 }
 .section > *:not(.prose) h1, .section > *:not(.prose) h2, .section > *:not(.prose) h3, .section > *:not(.prose) h4, .section > *:not(.prose) h5, .section > *:not(.prose) h6 {
-  font-family: Georgia, serif !important;
+  font-family: "Zilla Slab", Georgia, serif !important;
 }
 .section:empty {
   display: none;
@@ -1192,7 +1203,7 @@ table.schedule tr.ongoing .title {
   overflow-x: auto;
 }
 .item-list.swag-list h3 {
-  font-family: Helvetica, Arial, sans-serif !important;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif !important;
   font-size: 1em;
 }
 
@@ -1244,7 +1255,7 @@ article .post-body {
   z-index: 0;
 }
 .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 .prose li {
   list-style: disc;
@@ -1330,7 +1341,7 @@ article .post-body {
 /* Blog Post
 ------------------------------------------------------- */
 .avatar {
-  background-image: url("https://osmus.github.io/dogwood/assets/avatar.jpg");
+  background-image: url("https://openstreetmap.us/assets/avatar.jpg");
   background-color: white;
   border-radius: 50%;
   background-size: cover;
@@ -1412,7 +1423,7 @@ article .post-body {
 
 .status-bubble {
   color: white;
-  background: #930041;
+  background: #CC2B48;
   border-radius: 20px;
   position: absolute;
   top: -10px;
@@ -1434,7 +1445,7 @@ article .post-body {
 }
 
 .status-symbol {
-  color: #930041;
+  color: #CC2B48;
 }
 
 .hoverscale {
@@ -1551,6 +1562,535 @@ ul.org-members.level-1 li {
     display: flex;
     flex-direction: column;
   }
+}
+.homepage .app-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: -12px;
+  width: calc(100% + 24px);
+}
+.homepage .app-gallery .app {
+  position: relative;
+  text-align: center;
+  width: 362.6666666667px;
+  padding: 0 12px 24px 12px;
+}
+.homepage .app-gallery .app-sign {
+  position: relative;
+  transition: transform 100ms ease-in-out;
+  margin-bottom: 6px;
+}
+.homepage .app-gallery .app-sign:hover {
+  transform: scale(1.04);
+  z-index: 9999;
+}
+.homepage .app-gallery .tagline {
+  font-weight: 600;
+}
+.homepage .map-section {
+  background-color: #F9F5F1;
+  border-top: 1px solid #e5e2de;
+  border-bottom: 1px solid #e5e2de;
+}
+.homepage .map-container {
+  padding-left: 36px;
+  padding-right: 36px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1100px) {
+  .homepage .map-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+.homepage iframe.mapframe {
+  width: 100%;
+  height: 75vh;
+  border: 1px solid #e5e2de;
+}
+@media only screen and (max-width: 720px) {
+  .homepage .app-gallery {
+    justify-content: center;
+  }
+  .homepage .section-header {
+    text-align: center;
+    justify-content: center;
+  }
+}
+.homepage .splash {
+  width: 100%;
+  background-position: center top;
+  background-size: cover;
+  padding-top: 25vw;
+}
+.homepage .splash-body {
+  border-top: 1px solid rgba(128, 128, 128, 0.26);
+  text-align: center;
+  color: white;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background: rgba(2, 45, 77, 0.94);
+  padding-bottom: 24px;
+}
+.homepage .splash-body img {
+  height: 160px;
+  width: 160px;
+  margin-top: -80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.page-maproulette .cover {
+  background: linear-gradient(to right, #172E51, #53856E);
+}
+.page-maproulette a.button.prominent {
+  color: #172E51;
+  background-color: rgb(145, 243, 162);
+  border-color: rgb(145, 243, 162);
+}
+
+.page-public-domain-map .themed {
+  background: linear-gradient(to right, #1D1C42, #3D3B77);
+}
+.page-public-domain-map a.button.prominent {
+  background-color: #5451C5;
+  border-color: #5451C5;
+}
+
+.page-openstreetmap-us-slack .cover {
+  background: linear-gradient(to right, #4A154B, #824484);
+}
+.page-openstreetmap-us-slack a.button.prominent {
+  background-color: #b059b4;
+  border-color: #b059b4;
+}
+
+.page-field-papers .cover {
+  background: black;
+}
+.page-field-papers a.button.prominent {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+.page-osmcha .cover {
+  background: linear-gradient(to right, #731323, #CC2C47);
+}
+.page-osmcha .extra-1, .page-osmcha .extra-2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 8px;
+}
+.page-osmcha .extra-1 {
+  bottom: 0;
+  background: linear-gradient(to right, #31AB97, #3ADBC0);
+}
+.page-osmcha .extra-2 {
+  bottom: 8px;
+  background: linear-gradient(to right, #b68421, #DB950A);
+}
+.page-osmcha a.button.prominent {
+  background-color: #61A5F5;
+  border-color: #61A5F5;
+}
+
+.page-teachosm .cover {
+  background-image: url("https://openstreetmap.us/img/pages/teachosm/greyscale.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.page-teachosm a.button.prominent {
+  background-color: #7FBC6F;
+  border-color: #7FBC6F;
+}
+
+.ispage-mapping-usa .themed {
+  background: #06121A;
+  color: #E5F7FC;
+}
+.ispage-mapping-usa .themed a.button.bordered {
+  color: #E5F7FC;
+  border-color: #E5F7FC;
+}
+.ispage-mapping-usa .themed a.button.prominent {
+  color: #06121A;
+  background-color: #E5F7FC;
+  border-color: #E5F7FC;
+}
+
+.page-mapping-usa-2024 .content a:not(.button) {
+  color: #1d5075;
+}
+.page-mapping-usa-2024 .themed {
+  color: #06121A;
+  background-color: #E5F7FC;
+  background-image: url("https://openstreetmap.us/img/pages/mapping-usa-2024/flakes.png");
+  background-size: cover;
+  background-position: center;
+}
+.page-mapping-usa-2024 .themed img.wordmark {
+  max-height: 100px;
+  margin-top: 20px;
+}
+.page-mapping-usa-2024 .themed .pagenav {
+  border-bottom: 0;
+}
+.page-mapping-usa-2024 .themed a.button.bordered {
+  border-color: #06121A;
+  color: #06121A;
+}
+.page-mapping-usa-2024 .themed a.button.prominent {
+  color: white;
+  background-color: #06121A;
+  border-color: #06121A;
+}
+.page-mapping-usa-2024 table.schedule th {
+  color: white;
+  background-color: #06121A;
+  border-color: #232d34;
+}
+
+#notice-overlay.mapping-usa {
+  color: #06121A;
+  background-color: #E5F7FC;
+}
+
+.page-mapping-usa-2022 .themed {
+  color: #FFF9F3;
+  background: #361100;
+}
+.page-mapping-usa-2022 .themed a.button.prominent {
+  background-color: #009016;
+  border-color: #009016;
+}
+.page-mapping-usa-2022 .content {
+  background: #FFF9F3;
+}
+.page-mapping-usa-2022 .content a:not(.button) {
+  color: #361100;
+}
+.page-mapping-usa-2022 table.schedule th {
+  color: #FFF9F3;
+  background-color: #361100;
+  border-color: #4d3429;
+}
+.page-mapping-usa-2022 table.schedule tr {
+  background: initial;
+}
+
+.page-mapping-usa-2021 .themed {
+  background: #FA5C5A;
+}
+.page-mapping-usa-2021 table.schedule th {
+  color: white;
+  background-color: #FA5C5A;
+  border-color: #df534f;
+}
+
+.page-connect-2020 .themed {
+  background: #76B8CB;
+}
+
+.page-mappy-hours .themed {
+  background: linear-gradient(to right, #AE222E, #2A0D41);
+}
+.page-mappy-hours .themed a.button.prominent {
+  background-color: #fff;
+  border-color: #fff;
+  color: #AE222E;
+}
+
+.ispage-state-of-the-map-us h1, .page-state-of-the-map-us-2024 h1 {
+  font-family: "National Park";
+  font-weight: 700;
+}
+
+.ispage-state-of-the-map-us h1 {
+  font-family: "National Park";
+  font-weight: 700;
+}
+.ispage-state-of-the-map-us .image-gallery {
+  margin-top: -24px;
+}
+.ispage-state-of-the-map-us .image-band {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.ispage-state-of-the-map-us .image-band img {
+  border-radius: 2px;
+  margin-right: 6px;
+  margin-left: 6px;
+  margin-bottom: 12px;
+  max-width: 350px;
+  width: 30vw;
+}
+.ispage-state-of-the-map-us .pre-cover {
+  height: 50vw;
+  max-height: 290px;
+  width: 100%;
+  background: url("https://openstreetmap.us/img/pages/sotmus/2024/contours.jpg");
+  background-position: center;
+}
+.ispage-state-of-the-map-us .cover {
+  padding-bottom: 40px;
+  overflow: visible;
+  max-height: 100vw;
+  min-height: 800px;
+  height: 100vh;
+}
+.ispage-state-of-the-map-us .cover .logo-area {
+  position: relative;
+  top: -270px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media only screen and (max-width: 700px) {
+  .ispage-state-of-the-map-us .cover .logo-area {
+    top: calc(-40vw - 20px);
+  }
+}
+.ispage-state-of-the-map-us .cover .logo-area .logo-wrap {
+  width: 700px;
+  max-width: 100%;
+  max-height: initial;
+}
+.ispage-state-of-the-map-us .cover .logo-area .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ispage-state-of-the-map-us .cover .logo-area .buttons {
+  flex-direction: column;
+  align-items: center !important;
+}
+.ispage-state-of-the-map-us .cover .logo-area .buttons .text-buttons {
+  margin-bottom: 14px;
+}
+.ispage-state-of-the-map-us .cover .logo-area .buttons .text-buttons > .button {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.ispage-state-of-the-map-us .cover .logo-area .blurb {
+  font-size: 20px;
+  margin-top: 24px;
+}
+.ispage-state-of-the-map-us .cover .pagenav, .ispage-state-of-the-map-us .cover .tagline, .ispage-state-of-the-map-us .cover .breadcrumbs {
+  display: none;
+}
+.ispage-state-of-the-map-us .themed {
+  background-image: url("https://openstreetmap.us/img/pages/sotmus/2024/skyline.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  color: white;
+}
+.ispage-state-of-the-map-us .themed a.button.prominent {
+  background-color: #EAC25A;
+  border-color: #EAC25A;
+  color: #534F4C;
+}
+.ispage-state-of-the-map-us .themed.banner-footer {
+  background-position: center 56%;
+  height: 70px;
+}
+
+.page-state-of-the-map-us-2012 .themed {
+  background: #172339;
+  background-image: url("https://openstreetmap.us/img/pages/sotmus/2012/bg.png");
+  background-position: 90% bottom;
+  background-size: 400px;
+  background-repeat: no-repeat;
+}
+.page-state-of-the-map-us-2012 .themed a.button.prominent {
+  background-color: #94DD56;
+  border-color: #94DD56;
+  color: #172339;
+}
+
+.page-state-of-the-map-us-2013 .themed {
+  background: #72999B;
+}
+.page-state-of-the-map-us-2013 .themed a.button.prominent {
+  background-color: #B25E4B;
+  border-color: #B25E4B;
+}
+
+.page-state-of-the-map-us-2014 .themed {
+  background: #31b2d0;
+  background-image: url("https://openstreetmap.us/img/pages/sotmus/2014/bg.png");
+  background-position: 90% bottom;
+  background-size: 400px;
+  background-repeat: no-repeat;
+}
+.page-state-of-the-map-us-2014 .themed a.button.prominent {
+  background-color: #0F2D34;
+  border-color: #0F2D34;
+}
+
+.page-state-of-the-map-us-2015 .themed {
+  background: #1b1b1b;
+  background-image: url("https://openstreetmap.us/img/pages/sotmus/2015/bg.png");
+  background-position: 90% 92%;
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+.page-state-of-the-map-us-2015 .themed a.button.prominent {
+  background-color: #53104C;
+  border-color: #53104C;
+}
+
+.page-state-of-the-map-us-2016 .themed {
+  background-color: #142736;
+  background-image: url("https://openstreetmap.us/img/pages/sotmus/2016/bg.jpg");
+  background-position: center bottom;
+  background-size: cover;
+}
+.page-state-of-the-map-us-2016 .themed a.button.prominent {
+  background-color: #cfdcf3;
+  border-color: #cfdcf3;
+  color: #142736;
+}
+
+.page-state-of-the-map-us-2017 .themed {
+  background-color: #283277;
+  background-image: url("https://openstreetmap.us/img/pages/sotmus/2017/bg.png");
+  background-position: right bottom;
+  background-size: 600px;
+  background-repeat: no-repeat;
+}
+.page-state-of-the-map-us-2017 .themed a.button.prominent {
+  background-color: #D22143;
+  border-color: #D22143;
+}
+
+.page-state-of-the-map-us-2018 .themed {
+  background-color: white;
+  background-image: url("https://openstreetmap.us/img/pages/sotmus/2018/bg.png");
+  background-position: center bottom;
+  background-size: 1300px;
+  background-repeat: no-repeat;
+  color: #006aaf;
+}
+.page-state-of-the-map-us-2018 .themed a.button.prominent {
+  background-color: #006aaf;
+  border-color: #006aaf;
+  color: white;
+}
+
+.page-state-of-the-map-us-2019 .themed {
+  background: #5F3930;
+}
+.page-state-of-the-map-us-2019 .themed a.button.prominent {
+  background-color: #89C5D3;
+  border-color: #89C5D3;
+}
+
+.page-state-of-the-map-us-2022 .themed {
+  background-color: #5D9A79;
+  background-image: url("https://openstreetmap.us/img/pages/sotmus/2022/bg.png");
+  background-position: center bottom;
+  background-size: 1000px;
+  background-repeat: repeat-x;
+  padding-bottom: 60px;
+}
+.page-state-of-the-map-us-2022 .themed a.button.prominent {
+  background-color: #DDAB6F;
+  border-color: #DDAB6F;
+  color: #365254;
+}
+
+.page-state-of-the-map-us-2023 .themed {
+  background: #253423;
+  background-image: url("https://openstreetmap.us/img/pages/sotmus/2023/bg.png");
+  background-position: center bottom;
+  background-size: 700px;
+  background-repeat: repeat-x;
+  padding-bottom: 60px;
+}
+.page-state-of-the-map-us-2023 .themed a.button.prominent {
+  background-color: #965354;
+  border-color: #965354;
+}
+
+.page-state-of-the-map-us .custom-marker.main-venue,
+.page-state-of-the-map-us-2024 .custom-marker.main-venue {
+  --color: #BD9836;
+}
+.page-state-of-the-map-us .custom-marker.transport,
+.page-state-of-the-map-us-2024 .custom-marker.transport {
+  --color: #393B57;
+}
+.page-state-of-the-map-us .custom-marker.transport-minor,
+.page-state-of-the-map-us-2024 .custom-marker.transport-minor {
+  --color: #7C7E96;
+}
+.page-state-of-the-map-us .custom-marker.lodging,
+.page-state-of-the-map-us-2024 .custom-marker.lodging {
+  --color: #7f766e;
+}
+.page-state-of-the-map-us .sponsors-section,
+.page-state-of-the-map-us-2024 .sponsors-section {
+  background: #393B57;
+  color: white;
+}
+.page-state-of-the-map-us .sponsors-section a,
+.page-state-of-the-map-us-2024 .sponsors-section a {
+  color: white;
+  text-decoration: underline;
+}
+
+.page-trails-stewardship-initiative h1 {
+  font-family: "National Park";
+  font-weight: 700;
+}
+.page-trails-stewardship-initiative .prose h2 {
+  font-family: "National Park";
+  font-weight: 700;
+}
+.page-trails-stewardship-initiative .themed {
+  background-image: url("https://openstreetmap.us/img/pages/trails/bg.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  color: #3C2F24;
+}
+.page-trails-stewardship-initiative .themed.banner-footer {
+  background-position: center 56%;
+  height: 70px;
+}
+.page-trails-stewardship-initiative a.button.bordered {
+  border-color: #3C2F24;
+  color: #3C2F24;
+}
+.page-trails-stewardship-initiative a.button.prominent {
+  background-color: #3C2F24;
+  border-color: #3C2F24;
+  color: white;
+}
+
+.ispage-trails-stewardship-initiative h1 {
+  font-size: 2em;
+}
+.ispage-trails-stewardship-initiative .cover {
+  height: calc(100vh - 54px);
+  max-height: 100vw;
+  min-height: 650px;
+}
+.ispage-trails-stewardship-initiative .cover .pagenav {
+  border-bottom-color: rgba(128, 128, 128, 0.26);
+}
+
+.page-openstreetmap-us-newsletter h1 {
+  font-family: "Courier Prime", "Courier New", Courier, monospace;
+}
+
+.swag-list.item-list.gallery .item-listing {
+  width: 354.312px;
 }
 
 /*# sourceMappingURL=style.css.map */

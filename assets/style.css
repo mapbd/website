@@ -1621,14 +1621,14 @@ ul.org-members.level-1 li {
   width: 100%;
   background-position: center top;
   background-size: cover;
-  padding-top: 25vw;
+  padding-top: 10vw;
 }
 .homepage .splash-body {
-  border-top: 1px solid rgba(128, 128, 128, 0.26);
+  /* border-top: 1px solid rgba(128, 128, 128, 0.26); */
   text-align: center;
   color: white;
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  /* -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px); */
   padding-bottom: 24px;
 }
 .homepage .splash-body img {

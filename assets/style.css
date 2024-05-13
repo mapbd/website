@@ -1373,7 +1373,7 @@ article .post-body {
 /* Footer
 ------------------------------------------------------- */
 .footer {
-  min-height: 490px;
+  min-height: 200px;
   font-size: 17px;
   border-top: 1px solid rgb(60, 60, 60);
   position: relative;

@@ -124,12 +124,12 @@ h4, h5 {
 
 /* Links */
 a {
-  color: #009016;
+  color: #F20807;
   text-decoration: none;
 }
 
 a:visited {
-  color: #009016;
+  color: #F20807;
 }
 
 a:hover, a:active {
@@ -144,10 +144,10 @@ a:hover:not(.button), a:active:not(.button) {
   color: white;
 }
 .dark a {
-  color: #33cd4b;
+  color: #F20807;
 }
 .dark a:hover, .dark a:active {
-  color: #5cd76f;
+  color: #5cd76f; 5CD76F
 }
 .dark hr {
   background: rgba(255, 255, 255, 0.13);
